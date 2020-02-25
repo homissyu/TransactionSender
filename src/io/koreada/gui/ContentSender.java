@@ -201,7 +201,10 @@ public class ContentSender {
 				if (getJTable().getRowCount() > 0) {
 					if(getJTable().getSelectedRowCount()>0){
 	                	try {
-							api.deposit2API("["+mapper.writeValueAsString(jTable.getValueAt(jTable.getSelectedRow(), jTable.getColumnCount()-1))+"]");
+							if(api.deposit2API("["+mapper.writeValueAsString(jTable.getValueAt(jTable.getSelectedRow(), jTable.getColumnCount()-1))+"]"))
+								dialog.showMessage("Delivery success");
+							else
+								dialog.showMessage("Fail to send");
 						} catch (Exception e1) {
 							// TODO Auto-generated catch block
 							dialog.showMessage("Can't send a transaction to BackEnd");
