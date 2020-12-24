@@ -159,4 +159,6 @@ public class CommonConst{
 	public static char[] getSalphabetdecimalchar() {
 			return sAlphabetDecimalChar;
 	}
+	
+	public static boolean App4Server = false;
 }

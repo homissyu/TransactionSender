@@ -164,7 +164,7 @@ public class ContentSender {
 		jTable.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				textArea.setText(jTable.getValueAt(jTable.getSelectedRow(), 10).toString());
+				textArea.setText(jTable.getValueAt(jTable.getSelectedRow(), 12).toString());
 			}
 		});
 		jTable.setSurrendersFocusOnKeystroke(true);
@@ -231,6 +231,7 @@ public class ContentSender {
 				try {
 					StringBuffer sb = new StringBuffer();
 					String filePath = mInstall.getLogDir() + File.separator + CommonConst.ACCOUNT_INFO_NAME + CommonConst.CURRENT_DIR + CommonConst.JSON_EXTENSION;
+//					String filePath = CommonConst.ACCOUNT_INFO_NAME + CommonConst.CURRENT_DIR + CommonConst.JSON_EXTENSION;
 					filePath = openAction(e, filePath);
 		            bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(filePath),"UTF8"));
 		            String currentLine;
@@ -239,6 +240,7 @@ public class ContentSender {
 		            } 
 		            currentLine = sb.toString();
 		            currentLine = currentLine.replaceAll("\\].\\[", ",");
+//		            System.out.println(currentLine);
 		            aDatumArr = mapper.readValue(currentLine, ArrayList.class);
 					
 				} catch(Exception ex) {
@@ -252,9 +254,9 @@ public class ContentSender {
 				Vector<String> aColNames = new Vector<String>();
 		        aColNames.add("no");
 		        aColNames.add("regData");
-//		        aColNames.add("widthdraw");
+		        aColNames.add("widthdraw");
 		        aColNames.add("deposit");
-//		        aColNames.add("balance");
+		        aColNames.add("balance");
 		        aColNames.add("contents");
 		        aColNames.add("srcAccNo");
 		        aColNames.add("srcBank");
@@ -281,6 +283,8 @@ public class ContentSender {
 	private String openAction(java.awt.event.ActionEvent evt, String aFilePath){
 		this.jFileChooser = new JFileChooser();
 		jFileChooser.setCurrentDirectory(new File(aFilePath));
+//		System.out.println(aFilePath);
+		jFileChooser.setSelectedFile(new File(aFilePath));
 		int ret = jFileChooser.showOpenDialog(this.frmContentsender);
 		if (ret !=JFileChooser.APPROVE_OPTION) {
 			return null;
