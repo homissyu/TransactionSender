@@ -141,7 +141,7 @@ public class CommonConst{
 	
 	public static final String WEBDRIVER_PATH = CommonConst.WEB_DRIVER_DIR_STR + File.separator + CommonConst.getOSName();
 //	public static final String EDGE_DRIVER_PATH = "E:\\sts_workspace\\selenium\\lib\\MicrosoftWebDriver.exe";
-//	public static final String IE_DRIVER_PATH = "E:\\sts_workspace\\selenium\\lib\\IEDriverServer.exe";
+//	public static final String IE_DRIVER_PATH = "E:\\sts_workspace\\selenium\\lib\\IEDriverServer.exe"; 
 	public static final Object SID_STRING = "SID";
 	public static final String ACCOUNT_INFO_NAME = "accountInfo";
 	public static final String JSON_EXTENSION = "json";

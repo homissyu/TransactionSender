@@ -62,7 +62,7 @@ public class CryptoUtils {
      * @param key
      * @param inputFile
      * @param outputFile
-     * @throws CryptoException
+     * @throws CryptoException 
      */
     public static void decrypt(Key key, File inputFile, File outputFile) throws CryptoException {
         doCrypto(Cipher.DECRYPT_MODE, key, inputFile, outputFile);

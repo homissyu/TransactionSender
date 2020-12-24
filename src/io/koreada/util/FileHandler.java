@@ -39,7 +39,7 @@ public class FileHandler {
     
 	/**
 	 * @param path
-	 * @param c
+	 * @param c 
 	 */
 	public void recursiveFind(Path path, Consumer<Path> c) {
 		try (DirectoryStream<Path> newDirectoryStream = Files.newDirectoryStream(path)) {

@@ -43,7 +43,7 @@ import io.koreada.util.CommonUtil;
 import io.koreada.util.Debug;
 import io.koreada.util.Install;
 
-public class ContentSender {
+public class ContentSender { 
 
 	private JFrame frmContentsender;
 	private Dialog dialog;
