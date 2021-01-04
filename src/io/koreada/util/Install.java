@@ -19,7 +19,7 @@ public class Install {
 
     private static boolean printedConfigFileMissing = false;
 
-    public static Install mInstall = null; // global per-process isntall object
+    public static Install mInstall = null; // global per-process isntall object 
 
     // these are key,value pairs which will override any existing key
     // with the new value for any Install object created AFTER they have

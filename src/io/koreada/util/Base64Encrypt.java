@@ -46,7 +46,7 @@ package io.koreada.util;
 
 
 
-/** 
+/**
 
 *   Provides encoding of raw bytes to base64-encoded characters, and
 

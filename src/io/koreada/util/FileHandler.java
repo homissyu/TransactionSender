@@ -25,7 +25,7 @@ import java.util.stream.StreamSupport;
 
 
 /**
- * 
+ *
  * @author Karl
  * @date 2017. 6. 19.
  */

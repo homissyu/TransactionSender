@@ -60,7 +60,7 @@ public class ContentSender {
 	private JTextArea textArea = null;
 	
 	/**
-	 * Launch the application. 
+	 * Launch the application.
 	 * @throws Exception
 	 */
 	public static void main(String[] args) throws Exception {
