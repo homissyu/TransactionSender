@@ -66,7 +66,7 @@ public class ContentSender {
 	public static void main(String[] args) throws Exception {
 		mInstall = new Install(args);
 		for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
-//			System.out.println(info.getName());
+//			System.out.println(info.getName()); 
 	    	if ("Nimbus".equals(info.getName())) {
 	            UIManager.setLookAndFeel(info.getClassName());
 //	            break;
