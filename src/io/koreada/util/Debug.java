@@ -32,7 +32,7 @@ public class Debug {
     private static Vector<String> mSubSystems = new Vector<String>(5);
     private static int mVerbosity = 1;
 
-    // write to mLogFile to get text into the log file.
+    // write to mLogFile to get text into the log file. 
     private static PrintWriter mLogFile = null;
     private static Object mLogFile_sem = new Object();
 

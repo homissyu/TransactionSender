@@ -30,7 +30,7 @@ public class Install {
 
     //
 
-    // CONSTANTS
+    // CONSTANTS 
     // System Configuration
     public static final String INSTALL_DIR = "INSTALL_DIR";
     public static final String INSTALL_DIR_DEFAULT = ".";
