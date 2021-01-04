@@ -23,7 +23,7 @@ public class Install {
 
     // these are key,value pairs which will override any existing key
     // with the new value for any Install object created AFTER they have
-    // been "submitted" with the setOverride() function. 
+    // been "submitted" with the setOverride() function.
     static Hashtable<String, String> mPerProcessOverrides = new Hashtable<String, String>();
 
     static Hashtable<String, String> mAcceptedHash = null;

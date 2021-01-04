@@ -61,7 +61,7 @@ public class ContentSender {
 	
 	/**
 	 * Launch the application.
-	 * @throws Exception 
+	 * @throws Exception
 	 */
 	public static void main(String[] args) throws Exception {
 		mInstall = new Install(args);
